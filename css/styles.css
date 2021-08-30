@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Roboto-regular';
+  src: url('/fonts/Roboto-Regular.ttf');
+}
+*,
+*::after,
+::before {
+  box-sizing: border-box;
+  font-family: 'Roboto-regular', sans-serif;
+}
+
+body {
+  border-top: 5px solid #FF7500;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
