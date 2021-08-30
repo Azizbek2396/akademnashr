@@ -1,12 +1,23 @@
 @font-face {
-  font-family: 'Roboto-regular';
+  font-family: 'Roboto-Regular';
   src: url('/fonts/Roboto-Regular.ttf');
 }
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('/fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'RobotoCondensed-Bold';
+  src: url('/fonts/RobotoCondensed-Bold.ttf');
+}
+
 *,
 *::after,
 ::before {
   box-sizing: border-box;
-  font-family: 'Roboto-regular', sans-serif;
+  font-family: 'Roboto-Regular', sans-serif;
 }
 
 body {
@@ -42,6 +53,8 @@ body {
 .sitenav-list {
   float: right;
   margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 .sitenav-list-item {
@@ -50,15 +63,15 @@ body {
   margin-left: 32px;
   color: #000;
   font-weight: 500;
-
+  padding: 20px 0;
 }
 
 .sitenav-list-item a {
   position: relative;
   text-decoration: none;
+  font-family: 'Roboto-Medium';
   color: #000;
   font-style: normal;
-  font-weight: 500;
   line-height: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -86,11 +99,132 @@ body {
 }
 
 .sitenav-list-item:last-child {
-  padding: 12px 24px;
-  background-color: #FF7500;
+  /* padding: 12px 24px; */
+
+  /* border-radius: 4px; */
 }
 
 .sitenav-list-item:last-child a {
+  padding: 12px 24px;
+  background-color: #FF7500;
+  border-radius: 4px;
+  color: white;
+  text-transform: none;
+}
+
+.sitenav-list-item:last-child a:hover {
+  opacity: 0.8;
+}
+
+.sitenav-list-item:last-child a:hover::after {
+  display: none;
 }
 
 /* ==== /Header ==== */
+
+/* ===== Phthon ===== */
+
+.python {
+  background-color: #252420;
+  color: #fff;
+  padding: 120px 0 60px 0;
+}
+
+.col-6 {
+  float: left;
+  width: 50%;
+}
+
+.course-title {
+  position: relative;
+  font-family: 'RobotoCondensed-Bold';
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.course-title::before {
+  position: absolute;
+  content: "";
+  background-color: #FF7500;
+  width: 80px;
+  height: 3px;
+  top: -40px;
+  left: 0;
+}
+
+.course-description {
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 32px;
+}
+
+.order-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #FF7500;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.order-button:hover {
+  opacity: 0.8;
+}
+
+.hero-img {
+  position: relative;
+}
+
+.img-book {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  filter: drop-shadow(24px 24px 0px rgba(255, 117, 0, 0.6));
+  border-radius: 8px;
+}
+
+/* ===== /Phthon ===== */
+
+/* ===== Features ===== */
+
+.features {
+  margin-top: 80px;
+  padding: 80px 0;
+}
+
+.why {
+  color: #000;
+}
+
+.features-list {
+  margin-top: 70px;
+}
+
+.feature-item {
+  float: left;
+  width: 25%;
+  margin-left: 12.5%;
+}
+
+.feature-item:first-child {
+  margin-left: 0;
+}
+
+.feature-item h3 {
+  font-family: 'RobotoCondensed-Bold';
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+}
+
+.feature-item p {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}
+
+/* ===== /Features ===== */
