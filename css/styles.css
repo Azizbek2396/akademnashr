@@ -13,6 +13,11 @@
   src: url('/fonts/RobotoCondensed-Bold.ttf');
 }
 
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('/fonts/Roboto-Bold.ttf');
+}
+
 *,
 *::after,
 ::before {
@@ -192,6 +197,7 @@ body {
 
 .features {
   margin-top: 80px;
+  margin-bottom: 130px;
   padding: 80px 0;
 }
 
@@ -228,3 +234,127 @@ body {
 }
 
 /* ===== /Features ===== */
+
+
+/* ===== /Sale ===== */
+
+.sale {
+  padding: 120px 0 160px 0;
+}
+.sale-box {
+  background-color:#252420;
+  border-radius: 12px;
+  padding: 64px;
+  color: #fff;
+}
+
+.sale-heading {
+  font-family: 'Roboto-Bold';
+  font-size: 40px;
+  line-height: 120%;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.sale-info p {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}
+
+.colored-text {
+  color: #FF7500;
+}
+
+.sale-img {
+  position: relative;
+}
+
+.sale-img img {
+  width: 500px;
+  position: absolute;
+  border-radius: 12px;
+  bottom: -282px;
+}
+
+/* ===== /Sale ===== */
+
+
+/* ===== Footer ===== */
+
+.footer-top {
+  margin-bottom: 40px;
+}
+.site-footer {
+  background: #F8F8F8;
+  padding: 56px 0;
+}
+
+.footer-logo {
+  float: left;
+}
+
+.socials {
+  float: right;
+}
+
+.socials a {
+  display: inline-block;
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.telegram {
+  background: url('/img/icon-telegram.svg') no-repeat center;
+}
+
+.telegram:hover {
+  background: url('/img/icon-telegram-hover.svg') no-repeat center;
+  transition: all 0.5s ease;
+}
+
+.facebook {
+  background: url('/img/icon-facebook.svg') no-repeat center;
+  transition: all 0.5s ease;
+}
+
+.facebook:hover {
+  background: url('/img/icon-facebook-hover.svg') no-repeat center;
+}
+
+.instagramm {
+  background: url('/img/icon-instagram.svg') no-repeat center;
+  transition: all 0.5s ease;
+}
+
+.instagramm:hover {
+  background: url('/img/icon-instagram-hover.svg') no-repeat center;
+}
+
+.hr {
+  height: 3px;
+  margin: 0 0 64px 0;
+  background: rgba(37, 36, 32, 0.5);
+}
+
+.col-3 {
+  float: left;
+  width: 25%;
+}
+
+.footer-link {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #252420;
+  margin: 16px 0;
+  transition: all 0.5s ease;
+}
+
+.footer-link:hover {
+  color: #FF7500;
+}
+
+/* ===== /Footer ===== */
